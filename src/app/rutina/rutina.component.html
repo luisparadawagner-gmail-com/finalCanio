@@ -1,1 +1,27 @@
-<p>rutina works!</p>
+<h1>Formulario Rutina Ejercicio</h1>
+
+<form [formGroup]='rutinaForm'>
+    <div class="datosRutina">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre de Rutina</mat-label>
+                <input matInput type="text" formControlName="rutinaName">          
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Número de repeticiones</mat-label>
+                <input matInput type="numero" formControlName="repeticiones">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+        <mat-label>Peso a levantar</mat-label>
+            <input matInput type="number" formControlName="peso">
+        </mat-form-field>
+                  
+               
+    </div>
+    
+    <button mat-raised-button (click)="subir()">Enviar</button>
+   
+    
+</form>

@@ -1,0 +1,4 @@
+[
+    { "nombre": "Sofia", "apellido":"canio", "telefono" : "299555666", "direccion" : "avenida siempre viva", "nacimiento": "1998-05-25", "rutinaName": "brazos", "repeticiones": 20, "peso" : 3},
+    { "nombre": "katy", "apellido":"Sin", "telefono" : "299202080", "direccion" : "su casa", "nacimiento": "2011-07-11"}
+]

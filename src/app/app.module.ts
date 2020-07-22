@@ -19,6 +19,8 @@ import { ClienteComponent } from './cliente/cliente.component';
 import { RutinaComponent } from './rutina/rutina.component';
 import { ListadoComponent } from './listado/listado.component';
 
+import { ServicioService } from './servicios/servicio.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,7 @@ import { ListadoComponent } from './listado/listado.component';
     MatSelectModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ServicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
