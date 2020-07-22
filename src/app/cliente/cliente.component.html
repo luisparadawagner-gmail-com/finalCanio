@@ -1,0 +1,37 @@
+<h1>Formulario Alumnos</h1>
+
+<form [formGroup]='clienteForm'>
+    <div class="datosCliente">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+                <input matInput type="text" formControlName="nombre">          
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+                <input matInput type="text" formControlName="apellido">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+        <mat-label>Telefono</mat-label>
+            <input matInput type="number" formControlName="telefono">
+        </mat-form-field>
+           
+        <mat-form-field appearance="outline">
+            <mat-label>Dirección</mat-label>
+            <input matInput type="text" formControlName="direccion">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Fecha de Nacimiento</mat-label>
+            <input matInput type="date" formControlName="nacimiento">
+        </mat-form-field>
+
+       
+    </div>
+    
+    <button mat-raised-button (click)="subir()">Enviar</button>
+   
+    
+</form>
