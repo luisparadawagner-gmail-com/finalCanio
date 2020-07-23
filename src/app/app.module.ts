@@ -20,13 +20,15 @@ import { RutinaComponent } from './rutina/rutina.component';
 import { ListadoComponent } from './listado/listado.component';
 
 import { ServicioService } from './servicios/servicio.service';
+import { ListadoRutinasComponent } from './listado-rutinas/listado-rutinas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClienteComponent,
     RutinaComponent,
-    ListadoComponent
+    ListadoComponent,
+    ListadoRutinasComponent
   ],
   imports: [
     BrowserModule,

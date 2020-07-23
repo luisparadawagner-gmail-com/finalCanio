@@ -12,8 +12,7 @@ import { RutinaComponent } from '../rutina/rutina.component';
 })
 export class ListadoComponent implements OnInit {
 
-  displayedColumns: string [] = [ 'nombre' , 'apellido' , 'telefono' , 'direccion', 'nacimiento', 'rutinaName', 'repeticiones',
-  'peso', 'editar', 'agregar'];
+  displayedColumns: string [] = [ 'nombre' , 'apellido' , 'telefono' , 'direccion', 'nacimiento','editar', 'agregar'];
   dataSource : any[] = [];
 
   param : any;
@@ -55,7 +54,7 @@ export class ListadoComponent implements OnInit {
     debugger;	
   }
 
-  agregar(rutina) {	
+  agregar(rutina) {
     this.router.navigate(['/rutina-component', rutina]);
     debugger;	
   }

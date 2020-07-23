@@ -28,21 +28,6 @@
             <td mat-cell *matCellDef="let cliente"> {{cliente.nacimiento}} </td>
         </ng-container>
 
-        <ng-container matColumnDef="rutinaName">
-            <th mat-header-cell *matHeaderCellDef> Nombre de Rutina </th>
-            <td mat-cell *matCellDef="let rutina"> {{rutina.rutinaName | titlecase}} </td>
-        </ng-container>
-
-        <ng-container matColumnDef="repeticiones">
-            <th mat-header-cell *matHeaderCellDef> Repeticiones </th>
-            <td mat-cell *matCellDef="let rutina"> {{rutina.repeticiones}} </td>
-        </ng-container>
-
-        <ng-container matColumnDef="peso">
-            <th mat-header-cell *matHeaderCellDef> Peso </th>
-            <td mat-cell *matCellDef="let rutina"> {{rutina.peso}} </td>
-        </ng-container>
-
         <ng-container matColumnDef="editar">
             <th mat-header-cell *matHeaderCellDef> Editar </th>
             <td mat-cell *matCellDef="let cliente">
@@ -51,7 +36,7 @@
         </ng-container>
 
         <ng-container matColumnDef="agregar">
-            <th mat-header-cell *matHeaderCellDef> Agregar Rutina </th>
+            <th mat-header-cell *matHeaderCellDef> Asociar Rutina </th>
             <td mat-cell *matCellDef="let rutina">
                 <button type="button" (click)="agregar(rutina)" mat-flat-button color="accent">Add Rutina</button>
             </td>
